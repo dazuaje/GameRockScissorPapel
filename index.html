@@ -9,12 +9,13 @@
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
   
   <link rel="stylesheet" href="/css/style.css">
-
+<!----
   Score
   You Picked
   The House Picked
   You Lose
   Play Again
+-->
 </head>
 <body>
   <!--Cabecera Dani Yender-->
@@ -31,12 +32,13 @@
       </div>
     </div>
   </header>
-  <!----Rules-->
-  <main class="optionBox">
-    <button id="piedra">Piedra</button>
-    <button id="papel">Papel</button>
-    <button id="tijera">Tijera</button>
-  </main>
+  <!----Rules
+    <main class="optionBox">
+      <button id="piedra">Piedra</button>
+      <button id="papel">Papeeel</button>
+      <button id="tijera">Tijera</button>
+    </main>
+  -->
 
 <!---Principal buttons-->>
   <div class="box">
@@ -56,15 +58,28 @@
   <div class="modal">
     <h2 class="rulesTitle">Rules</h2>
     <img class="iconClose" src="/images/icon-close.svg">
-    <img class="iconRules" src="/images/image-rules-bonus.svg">
+    <img class="iconRules" src="/images/image-rules.svg">
   </div>
 
   <button class="btnRules">Rules</button>
+  <button class="reset">Reset</button>
+
 
   <!--Win or lose-->
   <div class="game">
     <h2 id="indicador">You Win</h2>
     <button id="playAgain">Play again</button>
+
+    <div id="piedra" class="boton rojo">
+      <p>La casa escogio</p>
+      <img src="images/icon-rock.svg" alt="rock">
+    </div>
+    
+    <div id="piedra" class="boton rojo">
+      <p>Tu escogiste</p>
+      <img src="images/icon-rock.svg" alt="rock">
+    </div>
+
   </div>
 
   <div class="attribution">

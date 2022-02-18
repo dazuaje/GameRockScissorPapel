@@ -120,6 +120,15 @@ tijera.addEventListener("click",()=>{
     juego("tijera");
 });
 
+let puntaje = document.querySelector('#puntaje');
+
+let i = 0;
+let reset = document.querySelector('.reset');
+
+reset.addEventListener('click', ()=>{
+    i = 0;
+    puntaje.textContent = "0";
+})
 
 function juego(parametro){
     let array = ["piedra", "papel", "tijera"];
@@ -132,9 +141,18 @@ function juego(parametro){
         (parametro == "papel" && array[random] == "piedra") ||
         (parametro == "tijera" && array[random] == "papel")){
         console.log("Ganó");
+        puntaje.textContent = i++;
+        alert('Ganaste')
+        
     }else if (parametro == array[random]){
         console.log("Empató");
+        alert('Empate')
     }else{
-        console.log("Perdió");
+        console.log("Perdio");
+        puntaje.textContent = i--;
+        alert('Perdiste')
     }
 }
+
+
+

@@ -6,6 +6,7 @@
     padding: 0;
     
 }
+
 header{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -50,18 +51,23 @@ header{
 
 body{
     box-sizing: border-box;
+    /*overflow-y: hidden;*/
     background-color: lightblue;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: hsl(237, 49%, 15%);  
+    position: relative;
 }
 
 /*------------------MODAL-------*/
 .modal{
     width: 375px;
-    height: 450px;
+    height: 380px;
     display:flex;
+    top: 20px;
+    right: 432px;
+    bottom: 20px;
     flex-direction: column;
-    position:relative;
+    position:absolute;
     margin: auto;
     background-color: white;
     visibility: hidden;
@@ -80,7 +86,7 @@ body{
 
 .iconRules{
     margin:auto;
-    margin-bottom: 5px;
+    margin-top:20px;
 }
 
 .iconClose{
@@ -98,7 +104,8 @@ body{
 
 .btnRules{
     position: absolute;
-    right: 10px;
+    right: 20px;
+    top:510px;
     background-color: transparent;
     color: white;
     padding: 10px 30px;
@@ -115,7 +122,7 @@ body{
 
 /***********************************Game****************************/
 .game{
-    display: none;
+    display: flex;/*LLLLLLLLLLLLLLLLLLLL*/
     flex-direction: column;
     width: 90%;
     margin: auto;
@@ -190,6 +197,7 @@ body{
     justify-content:center;
     padding: 45px;
     margin: auto;
+    background-image: url('/images/bg-triangle.svg') no-repeat;
 }
 
 .box .azul, .box .rojo{
@@ -232,7 +240,21 @@ body{
 
 
 
-
+.reset{
+    position: absolute;
+    bottom: 100px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+}
 
 
 
