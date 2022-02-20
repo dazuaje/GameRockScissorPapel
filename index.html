@@ -65,22 +65,33 @@
   <button class="reset">Reset</button>
 
 
-  <!--Win or lose-->
-  <div class="game">
-    <h2 id="indicador">You Win</h2>
-    <button id="playAgain">Play again</button>
+  <!--Win or lose---->
+  <div class="containerHands">
+      
+    <div class="contest">       
+      <div class="userhand">
+        <h1>YOU PICKED</h1>
+            <div id="handImage" class="handImageContainer boton">
+              <img id="userPickImage" src="/images/icon-rock.svg">
+            </div>
+      </div>        
+        </div>
 
-    <div id="piedra" class="boton rojo">
-      <p>La casa escogio</p>
-      <img src="images/icon-rock.svg" alt="rock">
-    </div>
-    
-    <div id="piedra" class="boton rojo">
-      <p>Tu escogiste</p>
-      <img src="images/icon-rock.svg" alt="rock">
-    </div>
-
+        <div class="referee"> 
+          <div class="decision"><h1 id="final-decision"> YOU WIN! </h1></div>
+         <div class="newGame">PLAY AGAIN</div>
+        </div>
+        
+        <div class="computerhand">
+            <h1>THE HOUSE PICKED</h1>
+            <div id="handComputer" class="handImageContainer boton">
+              <img id="computerPickImage" src='/images/icon-paper.svg'/> 
+            </div>   
+        </div>       
   </div>
+    
+    
+    
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

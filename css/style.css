@@ -51,7 +51,7 @@ header{
 
 body{
     box-sizing: border-box;
-    /*overflow-y: hidden;*/
+    overflow-y: hidden;
     background-color: lightblue;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: hsl(237, 49%, 15%);  
@@ -200,6 +200,10 @@ body{
     background-image: url('/images/bg-triangle.svg') no-repeat;
 }
 
+.ocultar{
+    display: none;
+}
+
 .box .azul, .box .rojo{
     align-self:flex-start;
 }
@@ -208,7 +212,46 @@ body{
     align-self: center;
 }
 
+.containerHands{
+    display: none;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.show{
+    display: flex;
+}
+
+
+/*Referee*/
+.referee{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+/*<div class="referee"> 
+          <div class="decision"><h1 id="final-decision"> YOU WIN! </h1></div>
+         <div class="newGame">PLAY AGAIN</div>
+        </div>*/
+.referee h1{
+    text-align: center;
+}
+.newGame{
+    background-color: #fff;
+    padding: 20px 70px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    cursor: pointer;
+}
+.computerHand h1{
+    text-align: center;
+}
 /*Vista Tablets*/
 @media (min-width: 768px){
     .encabezado{
